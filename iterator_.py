@@ -1,5 +1,5 @@
 nested_list = [
-                ['a', ['b', 8, 0, [1, 4, [9, [5, 5, [6, 2, ['f', 't']]]]]], 'c'],
+                ['a', ['b', 8, 0, [1, 4, [9, [5, 5, [6, 2, ['f', 't']]]]]]],
                 ['d', 'e', 'f', 'h', [False, [True]]],
                 [1, 2, None],
                 ]
@@ -35,9 +35,6 @@ class FlatIterator:
         if self.start == self.stop:
             raise StopIteration
         return self.result_list[self.start]
-
-
-
 
 
 for item in FlatIterator(nested_list):
